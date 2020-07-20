@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-20T09:26:26.154Z",
+    "end": "2020-07-20T09:26:28.952Z",
+    "duration": 2798,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "581e8245-ff1c-4669-8ca9-46cbe9fb2a7e",
+      "title": "",
+      "fullFile": "cypress/integration/regression-test-suite01-tc01-create-room.spec.js",
+      "file": "cypress/integration/regression-test-suite01-tc01-create-room.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c757e90a-f87c-4f87-be09-88064b1b2f1e",
+          "title": "Regression test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform valid login",
+              "fullTitle": "Regression test suite Perform valid login",
+              "timedOut": null,
+              "duration": 1876,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//1. Open the browser and start the system\n//localhost:3000\n//The application is started.\ncy.visit('http://localhost:3000'); // Extra Assertion 02\ncy.title().should('include', 'Testers Hotel'); //2. Assert that the page is correct\n//Login\n//The user is in the right page \ncy.contains('Login'); //3. Inform/write the username\n//tester01\n//cy.get('div.field:nth-child(1) > input:nth-child(2)') Alternative 01\ncy.get(':nth-child(1) > input').type('tester01'); //4. Inform/Write the password\n// GteteqbQQgSr88SwNExUQv2ydb7xuf8c\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c'); // Push Click on Login button\n//5. Click the login button\n//The user gains access to the system.\ncy.get('.btn').click(); //6. Assert that the user is on the “Hotel Overview” page \n//Tester Hotel Overview\n//The user is in the right page.\ncy.contains('Tester Hotel Overview'); //7. Assert that the right user is logged in\n//Welcome tester01!\n//The user is in the right page.\n//8. Click the View button for “Rooms” window\n// The user gains access to the Create Rooms window.\n//9. Assert that the user is in “Rooms” window\n//Rooms Reservations\n//The user is in the Rooms Reservations page.\n//10. Create: Click the Creat Room button\n// The user gains access to the New Room page\n//Assert that the  user is on New Room page\n//New Room\n//The user is in the New Room page\n//12. Add in valid information (alt. Random valid information) in all available windows\n//And Click Save button\n//  a. Selecting either the first available option from the available dropdowns (or randomly selected) or/and\n//  b. Add other valid values “manually” if there is no dropdown with predefined values available to choose from \n//The user gets back to the Create \n//Room page and can see the new created Room in the bottom of the page\n//13. Assert that the user is on Create Room page\n//Create Room\n//The user is in the Create Room page\n//14. \n//Assert that the Creation of Room was successful\n//Floor 1, Room 1\n//The  Creation of Room is successful\n//15. Click the button ‘logout’.\n//The user exits the system is forwarded to the login page.\ncy.get('.user > .btn').click(); //16. Assert that the page is correct\n//Login\n//The user is in the right page\ncy.contains('Login'); //Extra Assertion 02\ncy.title().should('include', 'Testers Hotel');",
+              "err": {},
+              "uuid": "393f9e50-8045-4383-b3ba-acb577ef379c",
+              "parentUUID": "c757e90a-f87c-4f87-be09-88064b1b2f1e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "393f9e50-8045-4383-b3ba-acb577ef379c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1876,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}

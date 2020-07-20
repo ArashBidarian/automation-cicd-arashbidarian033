@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-07-20T08:48:45.255Z",
+    "end": "2020-07-20T08:48:47.138Z",
+    "duration": 1883,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2657f8c4-c370-4c7b-b48b-623ebdb9c989",
+      "title": "",
+      "fullFile": "cypress/integration/backend-auth-assignment02.spec.js",
+      "file": "cypress/integration/backend-auth-assignment02.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "11a9ff65-dcfb-41e4-9686-a1446614e165",
+          "title": "testing auth",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test case 1 - Create a new Random Bill (GET & POST)",
+              "fullTitle": "testing auth test case 1 - Create a new Random Bill (GET & POST)",
+              "timedOut": null,
+              "duration": 666,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "billHelpers.createBillRequest(cy);",
+              "err": {},
+              "uuid": "ec5af7e8-ddc7-4c1c-b8a0-7af3c797a783",
+              "parentUUID": "11a9ff65-dcfb-41e4-9686-a1446614e165",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 2 - Create & Get all bills (GET & POST)",
+              "fullTitle": "testing auth test case 2 - Create & Get all bills (GET & POST)",
+              "timedOut": null,
+              "duration": 582,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "billHelpers.createBillRequest(cy);",
+              "err": {},
+              "uuid": "58d42a80-c483-4d3d-a90c-cac855027f70",
+              "parentUUID": "11a9ff65-dcfb-41e4-9686-a1446614e165",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test case 3 - Creatre a Bill & delete it (GET, POST & DELETE)",
+              "fullTitle": "testing auth test case 3 - Creatre a Bill & delete it (GET, POST & DELETE)",
+              "timedOut": null,
+              "duration": 582,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "billHelpers.createBillRequestAndDelete(cy);",
+              "err": {},
+              "uuid": "6eecf88c-59d7-4307-8f1b-15c1e7fcbc41",
+              "parentUUID": "11a9ff65-dcfb-41e4-9686-a1446614e165",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ec5af7e8-ddc7-4c1c-b8a0-7af3c797a783",
+            "58d42a80-c483-4d3d-a90c-cac855027f70",
+            "6eecf88c-59d7-4307-8f1b-15c1e7fcbc41"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1830,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}
